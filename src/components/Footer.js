@@ -6,8 +6,8 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+      <Link color="inherit" href="http://lin.rf.gd/?i=2/">
+        Franklin Inc.
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -27,7 +27,7 @@ export default function Footer() {
         color="textSecondary"
         component="p"
       >
-        Quality Pizza
+        Best of Pizza
       </Typography>
       <Copyright />
     </footer>
