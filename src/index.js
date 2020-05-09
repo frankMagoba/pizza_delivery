@@ -1,25 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import 'typeface-roboto';
-import App from './Containers/App';
-import registerServiceWorker from './registerServiceWorker';
-import {Provider} from 'react-redux';
-import {createStore,applyMiddleware} from 'redux';
-import reducer from './store/reducers/reducer';
-import thunk from 'redux-thunk';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
 
-const logger = store =>{
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-    return next => {
-        return action => {
-            const result=next(action);
-            return result;
-        }
-    };
-}
-
-const store = createStore(reducer,applyMiddleware(logger,thunk));
-
-ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
-registerServiceWorker();
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
