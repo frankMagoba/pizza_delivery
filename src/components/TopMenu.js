@@ -151,8 +151,8 @@ export default function TopMenu() {
     open={isMenuOpen}
     onClose={handleMenuClose}
     >
-      <MenuItem onClick={(e)=>{window.location.href = '/login'}}>Login</MenuItem>
-      <MenuItem onClick={(e)=>{window.location.href = '/register'}}>Register</MenuItem>
+      <MenuItem onClick={(e)=>{window.location.href = '/login'}}>Sign In</MenuItem>
+      <MenuItem onClick={(e)=>{window.location.href = '/register'}}>Sign Up</MenuItem>
     </Menu>
   );
 
@@ -217,7 +217,7 @@ export default function TopMenu() {
                 href="/login"
                 color="inherit"
               >
-                Login
+                Sign In
               </Button>
               <Button
                 edge="end"
@@ -227,7 +227,7 @@ export default function TopMenu() {
                 href="/register"
                 color="inherit"
               >
-                Register
+                Sign Up
               </Button>
             </Container>
             :
