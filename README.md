@@ -3,7 +3,7 @@
 ## Deployed at
 
 
-To view demo, check out the [Live](https://vibrant-villani-cfc729.netlify.app/).
+To view demo, check out the [Live](https://still-tundra-08708.herokuapp.com/).
 
 ### Code Splitting
 
